@@ -14,9 +14,7 @@
 
   <!-- monogram badge -->
   <rect x="80" y="66" width="84" height="84" rx="20" fill="#4f46e5"/>
-  <g transform="translate(80,66) scale(1.3125)">
-    <path d="M26 13 V51 M26 13 A11 11 0 0 1 26 35" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+  <text x="122" y="126" font-family="sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle">P</text>
 
   <!-- name -->
   <text x="80" y="300" font-family="sans-serif" font-size="82" font-weight="700" fill="#e7ebf1" letter-spacing="-2">Peem Phetpimol</text>
