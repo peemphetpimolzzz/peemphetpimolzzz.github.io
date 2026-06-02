@@ -56,8 +56,8 @@
       var val = el.getAttribute(lang === "th" ? "data-th" : "data-en");
       if (val != null) el.textContent = val;
     }
-    // Button shows the language you can switch TO
-    if (langLabel) langLabel.textContent = lang === "th" ? "EN" : "TH";
+    // Button shows the language currently displayed
+    if (langLabel) langLabel.textContent = lang === "th" ? "TH" : "EN";
   }
 
   var savedLang = store.get("lang") || "en";
