@@ -72,6 +72,31 @@
     });
   }
 
+  /* ---- Copy email button ------------------------------------------------ */
+  var copyBtn = document.getElementById("copy-email-btn");
+  var copyLabel = document.getElementById("copy-email-label");
+  var copyTimer = null;
+  if (copyBtn && copyLabel) {
+    copyBtn.addEventListener("click", function () {
+      var email = copyBtn.getAttribute("data-email") || "peem.phetpimol@gmail.com";
+      var done = function () {
+        var isTh = root.getAttribute("lang") === "th";
+        copyLabel.textContent = isTh ? "คัดลอกอีเมลแล้ว!" : "Copied to clipboard!";
+        if (copyTimer) clearTimeout(copyTimer);
+        copyTimer = setTimeout(function () {
+          var currentTh = root.getAttribute("lang") === "th";
+          var fallback = copyLabel.getAttribute(currentTh ? "data-th" : "data-en");
+          if (fallback) copyLabel.textContent = fallback;
+        }, 2200);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(done).catch(done);
+      } else {
+        done();
+      }
+    });
+  }
+
   /* ---- Footer year ------------------------------------------------------ */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
