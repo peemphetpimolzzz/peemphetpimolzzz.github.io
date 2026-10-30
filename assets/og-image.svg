@@ -1,34 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0e1117"/>
-      <stop offset="1" stop-color="#161b2e"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.85" cy="0.12" r="0.65">
-      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#4f46e5" stop-opacity="0"/>
-    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#27272a" />
+    </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- monogram badge -->
-  <rect x="80" y="66" width="84" height="84" rx="20" fill="#4f46e5"/>
-  <text x="122" y="126" font-family="sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle">P</text>
+  <!-- 1px inner card frame -->
+  <rect x="44" y="44" width="1112" height="542" rx="20" fill="#121215" stroke="#27272a" stroke-width="1.5"/>
 
-  <!-- name -->
-  <text x="80" y="300" font-family="sans-serif" font-size="82" font-weight="700" fill="#e7ebf1" letter-spacing="-2">Peem Phetpimol</text>
-  <!-- accent underline -->
-  <rect x="84" y="320" width="132" height="6" rx="3" fill="#8b87ff"/>
+  <!-- Status pill -->
+  <rect x="88" y="88" width="440" height="40" rx="20" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <circle cx="112" cy="108" r="6" fill="#10b981"/>
+  <text x="130" y="114" font-family="sans-serif" font-size="16" font-weight="600" fill="#e4e4e7">Turnkey Business Systems &amp; Custom Engineering</text>
 
-  <!-- subtitle -->
-  <text x="84" y="384" font-family="sans-serif" font-size="36" font-weight="600" fill="#9aa6b6">Fullstack &amp; Cloud Engineer · Test Automation</text>
-  <!-- tagline -->
-  <text x="84" y="430" font-family="sans-serif" font-size="26" fill="#7e8aa0">Ships features with the tests to prove they work.</text>
+  <!-- Monogram badge -->
+  <rect x="1008" y="84" width="60" height="60" rx="14" fill="#fafafa"/>
+  <text x="1038" y="125" font-family="monospace" font-size="32" font-weight="700" fill="#09090b" text-anchor="middle">P</text>
 
-  <!-- tech row -->
-  <text x="84" y="506" font-family="monospace" font-size="25" fill="#b9b6ff">.NET · Node.js · React · TypeScript · SQL · Azure · AWS · Playwright</text>
+  <!-- Name & headline -->
+  <text x="88" y="238" font-family="sans-serif" font-size="72" font-weight="700" fill="#fafafa" letter-spacing="-2.5">Peem Phetpimol</text>
+  <text x="88" y="298" font-family="sans-serif" font-size="30" font-weight="600" fill="#a1a1aa">Commercial Web Systems · Fullstack &amp; Cloud Engineer · SDET</text>
 
-  <!-- bottom github -->
-  <text x="84" y="566" font-family="monospace" font-size="24" fill="#6b7280">peemphetpimolzzz.github.io  ·  github.com/peemphetpimolzzz</text>
+  <!-- Product badges row (all 6 products) -->
+  <g font-family="monospace" font-size="15.5" font-weight="600" fill="#e4e4e7">
+    <rect x="88" y="346" width="154" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="165" y="372" text-anchor="middle">StockFlow ERP</text>
+
+    <rect x="252" y="346" width="166" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="335" y="372" text-anchor="middle">SlotWise Booking</text>
+
+    <rect x="428" y="346" width="166" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="511" y="372" text-anchor="middle">BillCraft TH PDF</text>
+
+    <rect x="604" y="346" width="164" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="686" y="372" text-anchor="middle">ShieldAuth RBAC</text>
+
+    <rect x="778" y="346" width="150" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="853" y="372" text-anchor="middle">SchemaLens DB</text>
+
+    <rect x="938" y="346" width="146" height="42" rx="9" fill="#18181b" stroke="#27272a"/>
+    <text x="1011" y="372" text-anchor="middle">PulseBoard QA</text>
+  </g>
+
+  <!-- Stack & footer -->
+  <text x="88" y="468" font-family="monospace" font-size="18.5" fill="#a1a1aa">.NET · Node.js · React · TypeScript · SQL Server · PostgreSQL · Azure · AWS · Playwright</text>
+  <text x="88" y="532" font-family="monospace" font-size="19" fill="#71717a">peemphetpimolzzz.github.io  ·  fastwork.co/user/peemphetpimol  ·  LINE @384uhsye</text>
 </svg>

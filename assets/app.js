@@ -1,7 +1,8 @@
-/* Peem Phetpimol — portfolio
+/* Peem Phetpimol — portfolio & commercial software storefront
    Two independent preferences, both persisted in localStorage:
    - theme: "light" | "dark"  (defaults to the OS preference)
    - lang:  "en" | "th"       (defaults to "en")
+   Plus interactive category filtering on the projects grid.
    No build step, no dependencies. */
 
 (function () {
@@ -15,11 +16,11 @@
 
   /* ---- Theme ------------------------------------------------------------ */
   var metaTheme = document.getElementById("meta-theme-color");
-  var THEME_COLORS = { light: "#ffffff", dark: "#0e1117" };
+  var THEME_COLORS = { light: "#fafafa", dark: "#09090b" };
 
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
-    if (metaTheme) metaTheme.setAttribute("content", THEME_COLORS[theme] || "#ffffff");
+    if (metaTheme) metaTheme.setAttribute("content", THEME_COLORS[theme] || "#fafafa");
   }
 
   var savedTheme = store.get("theme");
@@ -56,7 +57,6 @@
       var val = el.getAttribute(lang === "th" ? "data-th" : "data-en");
       if (val != null) el.textContent = val;
     }
-    // Button shows the language currently displayed
     if (langLabel) langLabel.textContent = lang === "th" ? "TH" : "EN";
   }
 
@@ -70,6 +70,28 @@
       applyLang(next);
       store.set("lang", next);
     });
+  }
+
+  /* ---- Project Category Filter ------------------------------------------ */
+  var filterButtons = document.querySelectorAll("[data-filter]");
+  var projectCards = document.querySelectorAll("[data-category]");
+  if (filterButtons.length && projectCards.length) {
+    for (var f = 0; f < filterButtons.length; f++) {
+      filterButtons[f].addEventListener("click", function () {
+        var target = this.getAttribute("data-filter") || "all";
+        for (var b = 0; b < filterButtons.length; b++) {
+          var isCurrent = filterButtons[b] === this;
+          filterButtons[b].classList.toggle("is-active", isCurrent);
+          filterButtons[b].setAttribute("aria-pressed", isCurrent ? "true" : "false");
+        }
+        for (var c = 0; c < projectCards.length; c++) {
+          var cats = (projectCards[c].getAttribute("data-category") || "").split(" ");
+          var show = target === "all" || cats.indexOf(target) !== -1;
+          if (show) projectCards[c].removeAttribute("hidden");
+          else projectCards[c].setAttribute("hidden", "hidden");
+        }
+      });
+    }
   }
 
   /* ---- Copy email button ------------------------------------------------ */
