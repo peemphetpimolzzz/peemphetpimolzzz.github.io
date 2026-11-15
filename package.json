@@ -1,0 +1,12 @@
+{
+  "name": "peemphetpimol-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Security-first minimalist engineering portfolio for Peem Phetpimol",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify:security": "node scripts/verify-security.mjs",
+    "check": "node scripts/build.mjs && node scripts/verify-security.mjs"
+  }
+}
