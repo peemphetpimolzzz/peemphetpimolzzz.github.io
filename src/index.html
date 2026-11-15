@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body id="top">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to main content</a>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -27,15 +27,20 @@
 
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#capabilities">Architecture</a></li>
-          <li><a class="nav-link" href="#cases">Case Studies</a></li>
-          <li><a class="nav-link" href="#experience">Experience</a></li>
-          <li><a class="nav-link" href="#security">Security</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#capabilities" data-i18n="nav.architecture">Architecture</a></li>
+          <li><a class="nav-link" href="#cases" data-i18n="nav.cases">Case Studies</a></li>
+          <li><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a class="nav-link" href="#security" data-i18n="nav.security">Security</a></li>
+          <li><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn is-active" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="th" aria-pressed="false">TH</button>
+        </div>
+
         <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch color theme">
           <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
@@ -58,12 +63,12 @@
     <div class="mobile-drawer" id="mobile-drawer" hidden>
       <nav aria-label="Mobile navigation">
         <ul class="mobile-nav-list">
-          <li><a class="mobile-nav-link" href="#capabilities">Architecture</a></li>
-          <li><a class="mobile-nav-link" href="#cases">Case Studies</a></li>
-          <li><a class="mobile-nav-link" href="#experience">Experience</a></li>
-          <li><a class="mobile-nav-link" href="#security">Security</a></li>
-          <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
-          <li><a class="mobile-nav-link" href="./assets/CV_Peem_Phetpimol.pdf" download="CV_Peem_Phetpimol.pdf">Download CV (PDF)</a></li>
+          <li><a class="mobile-nav-link" href="#capabilities" data-i18n="nav.architecture">Architecture</a></li>
+          <li><a class="mobile-nav-link" href="#cases" data-i18n="nav.cases">Case Studies</a></li>
+          <li><a class="mobile-nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a class="mobile-nav-link" href="#security" data-i18n="nav.security">Security</a></li>
+          <li><a class="mobile-nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a class="mobile-nav-link" href="./assets/CV_Peem_Phetpimol.pdf" download="CV_Peem_Phetpimol.pdf" data-i18n="nav.downloadCv">Download CV (PDF)</a></li>
         </ul>
       </nav>
     </div>
@@ -73,13 +78,13 @@
     <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Systems Analyst &amp; Full-Stack Engineer</p>
-          <h1 class="hero-title">Enterprise systems engineered for security.</h1>
-          <p class="hero-lead">Delivering .NET, Angular, and multi-cloud platforms from system analysis through SAST-verified production operations.</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Systems Analyst &amp; Full-Stack Engineer</p>
+          <h1 class="hero-title" data-i18n="hero.title">Enterprise systems engineered for security.</h1>
+          <p class="hero-lead" data-i18n="hero.lead">Delivering .NET, Angular, and multi-cloud platforms from system analysis through SAST-verified production operations.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#cases">Explore Case Studies</a>
+            <a class="btn btn-primary" href="#cases" data-i18n="hero.ctaCases">Explore Case Studies</a>
             <a class="btn btn-secondary" href="./assets/CV_Peem_Phetpimol.pdf" download="CV_Peem_Phetpimol.pdf">
-              <span>Download CV</span>
+              <span data-i18n="hero.ctaCv">Download CV</span>
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
               </svg>
@@ -91,28 +96,28 @@
           <div class="profile-top">
             <img class="profile-avatar" src="./assets/avatar.png" alt="Portrait of Peem Phetpimol" width="112" height="140">
             <div class="profile-identity">
-              <p class="profile-name">Peem Phetpimol</p>
-              <p class="profile-location">Bangkok / Samut Prakan, Thailand</p>
-              <p class="profile-tenure">5+ Years Enterprise Delivery</p>
+              <p class="profile-name" data-i18n="profile.name">Peem Phetpimol</p>
+              <p class="profile-location" data-i18n="profile.location">Bangkok / Samut Prakan, Thailand</p>
+              <p class="profile-tenure" data-i18n="profile.tenure">5+ Years Enterprise Delivery</p>
             </div>
           </div>
 
           <dl class="profile-specs">
             <div class="spec-row">
-              <dt>Primary Stack</dt>
+              <dt data-i18n="profile.stackLabel">Primary Stack</dt>
               <dd>.NET 8, Angular, Python, PostgreSQL</dd>
             </div>
             <div class="spec-row">
-              <dt>Cloud &amp; Delivery</dt>
+              <dt data-i18n="profile.cloudLabel">Cloud &amp; Delivery</dt>
               <dd>AWS ECS/RDS, Azure Containers, Docker</dd>
             </div>
             <div class="spec-row">
-              <dt>Security Gate</dt>
+              <dt data-i18n="profile.secLabel">Security Gate</dt>
               <dd>Entra ID OIDC, SonarQube, Coverity, Black Duck</dd>
             </div>
             <div class="spec-row">
-              <dt>Runtime Policy</dt>
-              <dd>Zero External CDNs · Strict CSP</dd>
+              <dt data-i18n="profile.policyLabel">Runtime Policy</dt>
+              <dd data-i18n="profile.policyVal">Zero External CDNs · Strict CSP</dd>
             </div>
           </dl>
         </aside>
@@ -123,41 +128,41 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="section-tag">Core Capabilities</p>
-            <h2 class="section-title" id="capabilities-heading">Architecture from specification to hardened deployment.</h2>
+            <p class="section-tag" data-i18n="cap.tag">Core Capabilities</p>
+            <h2 class="section-title" id="capabilities-heading" data-i18n="cap.title">Architecture from specification to hardened deployment.</h2>
           </div>
-          <p class="section-note">End-to-end technical ownership bridging stakeholder discovery, clean domain architecture, and cloud release governance.</p>
+          <p class="section-note" data-i18n="cap.note">End-to-end technical ownership bridging stakeholder discovery, clean domain architecture, and cloud release governance.</p>
         </div>
 
         <div class="bento-grid">
           <article class="bento-tile bento-wide bento-tinted">
             <div class="tile-head">
-              <h3>Systems Analysis &amp; Domain Design</h3>
+              <h3 data-i18n="cap.t1.title">Systems Analysis &amp; Domain Design</h3>
               <span class="tile-badge">SRS · UML · BPMN</span>
             </div>
-            <p class="tile-desc">Structuring requirements workshops, fit-gap assessments, sequence models, and UAT acceptance paths across SA, Development, QA, DB, and Infrastructure teams.</p>
+            <p class="tile-desc" data-i18n="cap.t1.desc">Structuring requirements workshops, fit-gap assessments, sequence models, and UAT acceptance paths across SA, Development, QA, DB, and Infrastructure teams.</p>
             <div class="diagram-frame" aria-label="Systems delivery workflow diagram">
               <svg class="arch-svg" viewBox="0 0 640 108" role="img" aria-label="Pipeline from discovery through hardened release">
                 <rect x="8" y="24" width="132" height="60" rx="6" class="svg-box"></rect>
-                <text x="74" y="50" text-anchor="middle" class="svg-label">Discovery &amp; SRS</text>
+                <text x="74" y="50" text-anchor="middle" class="svg-label" data-i18n="svg.s1">Discovery &amp; SRS</text>
                 <text x="74" y="68" text-anchor="middle" class="svg-sub">Fit-Gap · Impact</text>
 
                 <path d="M140 54h28m-6-5l6 5-6 5" class="svg-arrow"></path>
 
                 <rect x="170" y="24" width="136" height="60" rx="6" class="svg-box"></rect>
-                <text x="238" y="50" text-anchor="middle" class="svg-label">Domain &amp; API</text>
+                <text x="238" y="50" text-anchor="middle" class="svg-label" data-i18n="svg.s2">Domain &amp; API</text>
                 <text x="238" y="68" text-anchor="middle" class="svg-sub">ER · OpenAPI</text>
 
                 <path d="M306 54h28m-6-5l6 5-6 5" class="svg-arrow"></path>
 
                 <rect x="336" y="24" width="136" height="60" rx="6" class="svg-box"></rect>
-                <text x="404" y="50" text-anchor="middle" class="svg-label">SAST &amp; QA Gate</text>
+                <text x="404" y="50" text-anchor="middle" class="svg-label" data-i18n="svg.s3">SAST &amp; QA Gate</text>
                 <text x="404" y="68" text-anchor="middle" class="svg-sub">Sonar · xUnit</text>
 
                 <path d="M472 54h28m-6-5l6 5-6 5" class="svg-arrow"></path>
 
                 <rect x="502" y="24" width="130" height="60" rx="6" class="svg-box-strong"></rect>
-                <text x="567" y="50" text-anchor="middle" class="svg-label-strong">Cloud Release</text>
+                <text x="567" y="50" text-anchor="middle" class="svg-label-strong" data-i18n="svg.s4">Cloud Release</text>
                 <text x="567" y="68" text-anchor="middle" class="svg-sub-strong">ECS · Azure · UAT</text>
               </svg>
             </div>
@@ -165,23 +170,23 @@
 
           <article class="bento-tile bento-plain">
             <div class="tile-head">
-              <h3>Security &amp; Identity Engineering</h3>
+              <h3 data-i18n="cap.t2.title">Security &amp; Identity Engineering</h3>
               <span class="tile-badge">OWASP · OIDC</span>
             </div>
-            <p class="tile-desc">Embedding identity federation and static/software composition controls early in every sprint.</p>
+            <p class="tile-desc" data-i18n="cap.t2.desc">Embedding identity federation and static/software composition controls early in every sprint.</p>
             <ul class="spec-list">
-              <li><span>Identity</span><span>Microsoft Entra ID (OIDC / MSAL), JWT</span></li>
-              <li><span>Access Control</span><span>Server-side RBAC, rate limiting, idempotency</span></li>
-              <li><span>Code &amp; SCA</span><span>SonarQube, Coverity, Black Duck remediation</span></li>
+              <li><span data-i18n="cap.t2.k1">Identity</span><span>Microsoft Entra ID (OIDC / MSAL), JWT</span></li>
+              <li><span data-i18n="cap.t2.k2">Access Control</span><span data-i18n="cap.t2.v2">Server-side RBAC, rate limiting, idempotency</span></li>
+              <li><span data-i18n="cap.t2.k3">Code &amp; SCA</span><span data-i18n="cap.t2.v3">SonarQube, Coverity, Black Duck remediation</span></li>
             </ul>
           </article>
 
           <article class="bento-tile bento-plain">
             <div class="tile-head">
-              <h3>Full-Stack Application Systems</h3>
+              <h3 data-i18n="cap.t3.title">Full-Stack Application Systems</h3>
               <span class="tile-badge">.NET · Angular</span>
             </div>
-            <p class="tile-desc">Maintaining strict typing, relational data integrity, and responsive portals for high-throughput teams.</p>
+            <p class="tile-desc" data-i18n="cap.t3.desc">Maintaining strict typing, relational data integrity, and responsive portals for high-throughput teams.</p>
             <ul class="stack-pills">
               <li>ASP.NET Core</li>
               <li>Entity Framework Core</li>
@@ -198,25 +203,25 @@
 
           <article class="bento-tile bento-wide bento-contrast">
             <div class="tile-head">
-              <h3>Cloud Infrastructure &amp; CI/CD Gates</h3>
-              <span class="tile-badge-contrast">Zero-Touch Pipelines</span>
+              <h3 data-i18n="cap.t4.title">Cloud Infrastructure &amp; CI/CD Gates</h3>
+              <span class="tile-badge-contrast" data-i18n="cap.t4.badge">Zero-Touch Pipelines</span>
             </div>
-            <p class="tile-desc-contrast">Automating containerized releases, coverage thresholds, and database migrations across AWS and Azure environments.</p>
+            <p class="tile-desc-contrast" data-i18n="cap.t4.desc">Automating containerized releases, coverage thresholds, and database migrations across AWS and Azure environments.</p>
             <div class="infra-grid">
               <div class="infra-cell">
-                <p class="infra-k">AWS Production</p>
+                <p class="infra-k" data-i18n="cap.t4.k1">AWS Production</p>
                 <p class="infra-v">ECS, ECR, RDS, S3, ALB</p>
               </div>
               <div class="infra-cell">
-                <p class="infra-k">Azure Runtime</p>
+                <p class="infra-k" data-i18n="cap.t4.k2">Azure Runtime</p>
                 <p class="infra-v">App Service Containers, Entra ID</p>
               </div>
               <div class="infra-cell">
-                <p class="infra-k">CI/CD Automation</p>
+                <p class="infra-k" data-i18n="cap.t4.k3">CI/CD Automation</p>
                 <p class="infra-v">GitHub Actions, Docker, GitLab</p>
               </div>
               <div class="infra-cell">
-                <p class="infra-k">Test Verification</p>
+                <p class="infra-k" data-i18n="cap.t4.k4">Test Verification</p>
                 <p class="infra-v">xUnit, dotCover, Robot Framework</p>
               </div>
             </div>
@@ -229,18 +234,18 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="section-tag">Selected Engineering Work</p>
-            <h2 class="section-title" id="cases-heading">Sanitized enterprise case studies.</h2>
+            <p class="section-tag" data-i18n="cases.tag">Selected Engineering Work</p>
+            <h2 class="section-title" id="cases-heading" data-i18n="cases.title">Sanitized enterprise case studies.</h2>
           </div>
-          <p class="section-note">Architectural patterns and technical outcomes generalized to uphold corporate confidentiality.</p>
+          <p class="section-note" data-i18n="cases.note">Architectural patterns and technical outcomes generalized to uphold corporate confidentiality.</p>
         </div>
 
         <div class="filter-toolbar" role="toolbar" aria-label="Filter case studies by domain">
           <div class="filter-buttons" id="case-filters">
-            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All Systems (4)</button>
-            <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false">Full-Stack &amp; SA</button>
-            <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Security &amp; Compliance</button>
-            <button type="button" class="filter-btn" data-filter="cloud" aria-pressed="false">Cloud &amp; Automation</button>
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true" data-i18n="cases.f.all">All Systems (4)</button>
+            <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false" data-i18n="cases.f.systems">Full-Stack &amp; SA</button>
+            <button type="button" class="filter-btn" data-filter="security" aria-pressed="false" data-i18n="cases.f.security">Security &amp; Compliance</button>
+            <button type="button" class="filter-btn" data-filter="cloud" aria-pressed="false" data-i18n="cases.f.cloud">Cloud &amp; Automation</button>
           </div>
           <p class="filter-status" id="filter-status" aria-live="polite">Showing 4 of 4 case studies</p>
         </div>
@@ -249,19 +254,19 @@
           <article class="case-card case-featured" data-categories="systems security">
             <div class="case-main">
               <div class="case-meta-row">
-                <span class="case-domain">Security &amp; Compliance Portal</span>
-                <span class="case-year">2024 - Present</span>
+                <span class="case-domain" data-i18n="cases.1.domain">Security &amp; Compliance Portal</span>
+                <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
-              <h3>Enterprise Security Operations &amp; Access Governance Portal</h3>
-              <p class="case-summary">Led functional specification, domain modeling, and full-stack delivery for an enterprise governance portal uniting centralized directory controls, real-time notifications, and audit-ready approval trails.</p>
+              <h3 data-i18n="cases.1.title">Enterprise Security Operations &amp; Access Governance Portal</h3>
+              <p class="case-summary" data-i18n="cases.1.summary">Led functional specification, domain modeling, and full-stack delivery for an enterprise governance portal uniting centralized directory controls, real-time notifications, and audit-ready approval trails.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt>Identity &amp; Guards</dt>
-                  <dd>Enforced Microsoft Entra ID OIDC / MSAL authentication, strict server-side RBAC, request rate limiting, and idempotent mutation guards.</dd>
+                  <dt data-i18n="cases.1.k1">Identity &amp; Guards</dt>
+                  <dd data-i18n="cases.1.v1">Enforced Microsoft Entra ID OIDC / MSAL authentication, strict server-side RBAC, request rate limiting, and idempotent mutation guards.</dd>
                 </div>
                 <div>
-                  <dt>Security Verification</dt>
-                  <dd>Resolved critical findings across SonarQube, Coverity, and Black Duck SAST/SCA gates prior to AWS and Azure container deployment.</dd>
+                  <dt data-i18n="cases.1.k2">Security Verification</dt>
+                  <dd data-i18n="cases.1.v2">Resolved critical findings across SonarQube, Coverity, and Black Duck SAST/SCA gates prior to AWS and Azure container deployment.</dd>
                 </div>
               </dl>
               <div class="case-footer">
@@ -275,7 +280,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-1">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-1" hidden>
-                <p><strong>Design Decisions:</strong> Separated query and command services at the application layer with parameterized EF Core migrations, transactional outbox consistency, and Microsoft Graph background synchronization.</p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.1.detail">Separated query and command services at the application layer with parameterized EF Core migrations, transactional outbox consistency, and Microsoft Graph background synchronization.</span></p>
               </div>
             </div>
           </article>
@@ -283,15 +288,15 @@
           <article class="case-card" data-categories="systems">
             <div class="case-main">
               <div class="case-meta-row">
-                <span class="case-domain">Multi-Portal Operations</span>
-                <span class="case-year">2024 - Present</span>
+                <span class="case-domain" data-i18n="cases.2.domain">Multi-Portal Operations</span>
+                <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
-              <h3>Unified Service Request &amp; Operational Workflow Suite</h3>
-              <p class="case-summary">Architected interconnected internal portals for tracking cross-department requests, SAP OData master data synchronization, and automated PDF/Excel compliance exports.</p>
+              <h3 data-i18n="cases.2.title">Unified Service Request &amp; Operational Workflow Suite</h3>
+              <p class="case-summary" data-i18n="cases.2.summary">Architected interconnected internal portals for tracking cross-department requests, SAP OData master data synchronization, and automated PDF/Excel compliance exports.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt>Integration Layer</dt>
-                  <dd>Designed resilient REST contracts bridging core ERP SAP OData feeds with low-latency Redis caching and SQL Server reporting views.</dd>
+                  <dt data-i18n="cases.2.k1">Integration Layer</dt>
+                  <dd data-i18n="cases.2.v1">Designed resilient REST contracts bridging core ERP SAP OData feeds with low-latency Redis caching and SQL Server reporting views.</dd>
                 </div>
               </dl>
               <div class="case-footer">
@@ -304,7 +309,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-2">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-2" hidden>
-                <p><strong>Design Decisions:</strong> Standardized API error envelopes, pagination limits, and automated UAT test scripts so business owners could validate multi-stage routing rules independently.</p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.2.detail">Standardized API error envelopes, pagination limits, and automated UAT test scripts so business owners could validate multi-stage routing rules independently.</span></p>
               </div>
             </div>
           </article>
@@ -312,15 +317,15 @@
           <article class="case-card" data-categories="cloud security">
             <div class="case-main">
               <div class="case-meta-row">
-                <span class="case-domain">Cloud &amp; Release Engineering</span>
-                <span class="case-year">2024 - Present</span>
+                <span class="case-domain" data-i18n="cases.3.domain">Cloud &amp; Release Engineering</span>
+                <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
-              <h3>Multi-Cloud Container CI/CD &amp; Automated Coverage Pipelines</h3>
-              <p class="case-summary">Established reproducible Docker build pipelines in GitHub Actions shipping immutable images to AWS ECS/ECR and Azure App Service Containers.</p>
+              <h3 data-i18n="cases.3.title">Multi-Cloud Container CI/CD &amp; Automated Coverage Pipelines</h3>
+              <p class="case-summary" data-i18n="cases.3.summary">Established reproducible Docker build pipelines in GitHub Actions shipping immutable images to AWS ECS/ECR and Azure App Service Containers.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt>Quality Gates</dt>
-                  <dd>Integrated automated xUnit integration suites, dotCover coverage checks, and Robot Framework UI verification before promotion.</dd>
+                  <dt data-i18n="cases.3.k1">Quality Gates</dt>
+                  <dd data-i18n="cases.3.v1">Integrated automated xUnit integration suites, dotCover coverage checks, and Robot Framework UI verification before promotion.</dd>
                 </div>
               </dl>
               <div class="case-footer">
@@ -333,7 +338,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-3">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-3" hidden>
-                <p><strong>Design Decisions:</strong> Enforced least-privilege deployment roles, health-checked ALB rolling updates, and environment isolation between staging UAT and production RDS/S3 targets.</p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.3.detail">Enforced least-privilege deployment roles, health-checked ALB rolling updates, and environment isolation between staging UAT and production RDS/S3 targets.</span></p>
               </div>
             </div>
           </article>
@@ -341,15 +346,15 @@
           <article class="case-card" data-categories="cloud systems">
             <div class="case-main">
               <div class="case-meta-row">
-                <span class="case-domain">Platform Tooling &amp; Migration</span>
-                <span class="case-year">2022 - Present</span>
+                <span class="case-domain" data-i18n="cases.4.domain">Platform Tooling &amp; Migration</span>
+                <span class="case-year" data-i18n="period.2022Present">2022 - Present</span>
               </div>
-              <h3>Configuration Governance Utility &amp; Legacy Data Seeder</h3>
-              <p class="case-summary">Built developer environment validation tools and Python-driven ETL/seeders to migrate legacy relational datasets cleanly into modernized PostgreSQL schemas.</p>
+              <h3 data-i18n="cases.4.title">Configuration Governance Utility &amp; Legacy Data Seeder</h3>
+              <p class="case-summary" data-i18n="cases.4.summary">Built developer environment validation tools and Python-driven ETL/seeders to migrate legacy relational datasets cleanly into modernized PostgreSQL schemas.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt>Cutover Reliability</dt>
-                  <dd>Eliminated manual schema mismatches during UAT cutovers using repeatable dry-run validation and checksum verification.</dd>
+                  <dt data-i18n="cases.4.k1">Cutover Reliability</dt>
+                  <dd data-i18n="cases.4.v1">Eliminated manual schema mismatches during UAT cutovers using repeatable dry-run validation and checksum verification.</dd>
                 </div>
               </dl>
               <div class="case-footer">
@@ -362,7 +367,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-4">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-4" hidden>
-                <p><strong>Design Decisions:</strong> Idempotent batch ingestion with explicit foreign-key dependency ordering and dry-run diff summaries before database write commits.</p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.4.detail">Idempotent batch ingestion with explicit foreign-key dependency ordering and dry-run diff summaries before database write commits.</span></p>
               </div>
             </div>
           </article>
@@ -373,14 +378,14 @@
     <section class="section" id="experience" aria-labelledby="experience-heading">
       <div class="container experience-layout">
         <div class="experience-intro">
-          <p class="section-tag">Career Trajectory</p>
-          <h2 class="section-title" id="experience-heading">Experience across energy, telecom, and e-commerce.</h2>
-          <p class="section-note">Combining software implementation rigor with analytical leadership from requirement gathering to production reliability.</p>
+          <p class="section-tag" data-i18n="exp.tag">Career Trajectory</p>
+          <h2 class="section-title" id="experience-heading" data-i18n="exp.title">Experience across energy, telecom, and e-commerce.</h2>
+          <p class="section-note" data-i18n="exp.note">Combining software implementation rigor with analytical leadership from requirement gathering to production reliability.</p>
 
           <div class="education-box">
-            <p class="edu-label">Education</p>
-            <p class="edu-degree">Bachelor of Technology (Information Technology &amp; Digital Innovation)</p>
-            <p class="edu-school">Prince of Songkla University (Phuket Campus) · Jun 2021</p>
+            <p class="edu-label" data-i18n="edu.label">Education</p>
+            <p class="edu-degree" data-i18n="edu.degree">Bachelor of Technology (Information Technology &amp; Digital Innovation)</p>
+            <p class="edu-school" data-i18n="edu.school">Prince of Songkla University (Phuket Campus) · Jun 2021</p>
           </div>
         </div>
 
@@ -389,15 +394,15 @@
             <div class="timeline-header">
               <div>
                 <h3>System Analyst &amp; Software Engineer</h3>
-                <p class="timeline-company">PTT Global Chemical Public Company Limited · Bangkok, Thailand (Hybrid)</p>
+                <p class="timeline-company" data-i18n="exp.1.company">PTT Global Chemical Public Company Limited · Bangkok, Thailand (Hybrid)</p>
               </div>
-              <span class="timeline-period">Oct 2024 - Present</span>
+              <span class="timeline-period" data-i18n="exp.1.period">Oct 2024 - Present</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Analyze end-to-end enterprise products, leading impact analysis and implementation planning across SA, Development, QA, Database, and Infrastructure teams.</li>
-              <li>Architect full-stack systems using ASP.NET Core (.NET), C#, EF Core, Angular, SignalR, Python, Laravel, React, Vue, and PostgreSQL / SQL Server / Redis.</li>
-              <li>Harden production apps with Microsoft Entra ID (OIDC/MSAL), RBAC, rate limiting, and SonarQube / Coverity / Black Duck SAST/SCA remediation.</li>
-              <li>Operate Dockerized GitHub Actions CI/CD pipelines to AWS (ECS, ECR, RDS, S3, ALB) and Azure App Service Containers with xUnit/dotCover and Robot Framework gates.</li>
+              <li data-i18n="exp.1.b1">Analyze end-to-end enterprise products, leading impact analysis and implementation planning across SA, Development, QA, Database, and Infrastructure teams.</li>
+              <li data-i18n="exp.1.b2">Architect full-stack systems using ASP.NET Core (.NET), C#, EF Core, Angular, SignalR, Python, Laravel, React, Vue, and PostgreSQL / SQL Server / Redis.</li>
+              <li data-i18n="exp.1.b3">Harden production apps with Microsoft Entra ID (OIDC/MSAL), RBAC, rate limiting, and SonarQube / Coverity / Black Duck SAST/SCA remediation.</li>
+              <li data-i18n="exp.1.b4">Operate Dockerized GitHub Actions CI/CD pipelines to AWS (ECS, ECR, RDS, S3, ALB) and Azure App Service Containers with xUnit/dotCover and Robot Framework gates.</li>
             </ul>
           </li>
 
@@ -405,13 +410,13 @@
             <div class="timeline-header">
               <div>
                 <h3>Systems Analyst</h3>
-                <p class="timeline-company">Advanced Info Service Public Company Limited (AIS) · Bangkok, Thailand</p>
+                <p class="timeline-company" data-i18n="exp.2.company">Advanced Info Service Public Company Limited (AIS) · Bangkok, Thailand</p>
               </div>
-              <span class="timeline-period">Apr 2024 - Sep 2024</span>
+              <span class="timeline-period" data-i18n="exp.2.period">Apr 2024 - Sep 2024</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Authored SRS documentation, ER diagrams, API contracts, process flows, and UAT test specifications for engineering and stakeholder reviews.</li>
-              <li>Facilitated requirements and fit-gap workshops, resolved technical incidents to minimize operational downtime, and analyzed operational datasets.</li>
+              <li data-i18n="exp.2.b1">Authored SRS documentation, ER diagrams, API contracts, process flows, and UAT test specifications for engineering and stakeholder reviews.</li>
+              <li data-i18n="exp.2.b2">Facilitated requirements and fit-gap workshops, resolved technical incidents to minimize operational downtime, and analyzed operational datasets.</li>
             </ul>
           </li>
 
@@ -419,13 +424,13 @@
             <div class="timeline-header">
               <div>
                 <h3>Software Engineer</h3>
-                <p class="timeline-company">Triple T Broadband Public Company Limited (3BB) · Nonthaburi, Thailand</p>
+                <p class="timeline-company" data-i18n="exp.3.company">Triple T Broadband Public Company Limited (3BB) · Nonthaburi, Thailand</p>
               </div>
-              <span class="timeline-period">Apr 2022 - Mar 2024</span>
+              <span class="timeline-period" data-i18n="exp.3.period">Apr 2022 - Mar 2024</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Built and optimized internal telecom business applications supporting billing, customer operations, and database performance tuning.</li>
-              <li>Automated legacy system workflows and maintained cross-platform services with Vue, React, Laravel, Python, Flutter, and Oracle / SQL Server.</li>
+              <li data-i18n="exp.3.b1">Built and optimized internal telecom business applications supporting billing, customer operations, and database performance tuning.</li>
+              <li data-i18n="exp.3.b2">Automated legacy system workflows and maintained cross-platform services with Vue, React, Laravel, Python, Flutter, and Oracle / SQL Server.</li>
             </ul>
           </li>
 
@@ -433,25 +438,25 @@
             <div class="timeline-header">
               <div>
                 <h3>Junior Web Developer</h3>
-                <p class="timeline-company">NocNoc (BetterBe Marketplace) · Bangkok, Thailand</p>
+                <p class="timeline-company" data-i18n="exp.4.company">NocNoc (BetterBe Marketplace) · Bangkok, Thailand</p>
               </div>
-              <span class="timeline-period">Jun 2021 - Mar 2022</span>
+              <span class="timeline-period" data-i18n="exp.4.period">Jun 2021 - Mar 2022</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Delivered marketplace frontend components and backend API integrations with cross-functional e-commerce product squads.</li>
+              <li data-i18n="exp.4.b1">Delivered marketplace frontend components and backend API integrations with cross-functional e-commerce product squads.</li>
             </ul>
           </li>
 
           <li class="timeline-item">
             <div class="timeline-header">
               <div>
-                <h3>Freelance Software Engineer</h3>
-                <p class="timeline-company">Independent Engineering Engagements · Remote</p>
+                <h3 data-i18n="exp.5.role">Freelance Software Engineer</h3>
+                <p class="timeline-company" data-i18n="exp.5.company">Independent Engineering Engagements · Remote</p>
               </div>
-              <span class="timeline-period">2020 - Apr 2024</span>
+              <span class="timeline-period" data-i18n="exp.5.period">2020 - Apr 2024</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Delivered full-stack web applications and API integrations for SMB clients from scoping through cloud deployment and maintenance.</li>
+              <li data-i18n="exp.5.b1">Delivered full-stack web applications and API integrations for SMB clients from scoping through cloud deployment and maintenance.</li>
             </ul>
           </li>
         </ol>
@@ -462,18 +467,18 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="section-tag">Security By Design</p>
-            <h2 class="section-title" id="security-heading">Live client-verifiable security posture.</h2>
+            <p class="section-tag" data-i18n="sec.tag">Security By Design</p>
+            <h2 class="section-title" id="security-heading" data-i18n="sec.title">Live client-verifiable security posture.</h2>
           </div>
           <div class="audit-trigger-wrap">
-            <button type="button" class="btn btn-secondary" id="run-audit-btn">Re-Verify DOM Controls</button>
+            <button type="button" class="btn btn-secondary" id="run-audit-btn" data-i18n="sec.reverify">Re-Verify DOM Controls</button>
           </div>
         </div>
 
         <div class="security-panel">
           <div class="security-summary">
-            <h3>Zero-Trust Static Architecture</h3>
-            <p>This site serves strictly compiled static assets with zero runtime dependencies, zero external font or analytics requests, strict Content Security Policy rules, Subresource Integrity hashes at deployment, and Safe DOM updates without HTML string injection.</p>
+            <h3 data-i18n="sec.summaryTitle">Zero-Trust Static Architecture</h3>
+            <p data-i18n="sec.summaryBody">This site serves strictly compiled static assets with zero runtime dependencies, zero external font or analytics requests, strict Content Security Policy rules, Subresource Integrity hashes at deployment, and Safe DOM updates without HTML string injection.</p>
             <p class="audit-timestamp" id="audit-status" aria-live="polite">Initial browser inspection pending.</p>
           </div>
 
@@ -481,9 +486,9 @@
             <table class="security-table" aria-label="Browser security control verification results">
               <thead>
                 <tr>
-                  <th scope="col">Control</th>
-                  <th scope="col">Measured State</th>
-                  <th scope="col">Status</th>
+                  <th scope="col" data-i18n="sec.colControl">Control</th>
+                  <th scope="col" data-i18n="sec.colState">Measured State</th>
+                  <th scope="col" data-i18n="sec.colStatus">Status</th>
                 </tr>
               </thead>
               <tbody id="security-audit-rows">
@@ -502,14 +507,14 @@
     <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="container contact-grid">
         <div class="contact-copy">
-          <p class="section-tag">Contact</p>
-          <h2 class="section-title" id="contact-heading">Open to systems analysis &amp; senior full-stack roles.</h2>
-          <p class="section-note">For enterprise architecture inquiries or direct interviews, reach out via email or inspect public repositories on GitHub. Direct phone details are provided inside the downloadable PDF CV to prevent automated scraping.</p>
+          <p class="section-tag" data-i18n="contact.tag">Contact</p>
+          <h2 class="section-title" id="contact-heading" data-i18n="contact.title">Open to systems analysis &amp; senior full-stack roles.</h2>
+          <p class="section-note" data-i18n="contact.note">For enterprise architecture inquiries or direct interviews, reach out via email or inspect public repositories on GitHub. Direct phone details are provided inside the downloadable PDF CV to prevent automated scraping.</p>
         </div>
 
         <div class="contact-links">
           <a class="contact-row" href="mailto:peem.phetpimol@hotmail.com">
-            <span class="contact-k">Email</span>
+            <span class="contact-k" data-i18n="contact.emailLabel">Email</span>
             <span class="contact-v">peem.phetpimol@hotmail.com</span>
           </a>
           <a class="contact-row" href="https://github.com/peemphetpimolzzz" target="_blank" rel="noopener noreferrer">
@@ -517,12 +522,12 @@
             <span class="contact-v">github.com/peemphetpimolzzz</span>
           </a>
           <a class="contact-row" href="./assets/CV_Peem_Phetpimol.pdf" download="CV_Peem_Phetpimol.pdf">
-            <span class="contact-k">Curriculum Vitae</span>
-            <span class="contact-v">Download Updated PDF (A4)</span>
+            <span class="contact-k" data-i18n="contact.cvLabel">Curriculum Vitae</span>
+            <span class="contact-v" data-i18n="contact.cvVal">Download Updated PDF (A4)</span>
           </a>
           <div class="contact-row contact-static">
-            <span class="contact-k">Location</span>
-            <span class="contact-v">Bangkok / Samut Prakan, Thailand</span>
+            <span class="contact-k" data-i18n="contact.locLabel">Location</span>
+            <span class="contact-v" data-i18n="contact.locVal">Bangkok / Samut Prakan, Thailand</span>
           </div>
         </div>
       </div>
@@ -531,8 +536,8 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <p class="footer-copy">&copy; 2026 Peem Phetpimol. All rights reserved.</p>
-      <p class="footer-meta">Strict CSP · Zero Third-Party CDNs · Self-Hosted Inter OFL</p>
+      <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Peem Phetpimol. All rights reserved.</p>
+      <p class="footer-meta" data-i18n="footer.meta">Strict CSP · Zero Third-Party CDNs · Self-Hosted OFL Fonts</p>
     </div>
   </footer>
 

@@ -101,7 +101,12 @@ async function main() {
     "assets/fonts/Inter-Bold.ttf",
     "assets/fonts/InterDisplay-SemiBold.ttf",
     "assets/fonts/InterDisplay-Bold.ttf",
-    "assets/fonts/OFL.txt"
+    "assets/fonts/OFL.txt",
+    "assets/fonts/IBMPlexSansThai-Regular.woff2",
+    "assets/fonts/IBMPlexSansThai-Medium.woff2",
+    "assets/fonts/IBMPlexSansThai-SemiBold.woff2",
+    "assets/fonts/IBMPlexSansThai-Bold.woff2",
+    "assets/fonts/OFL-IBM-Plex.txt"
   ];
   for (const relPath of requiredAssets) {
     await access(path.join(distDir, relPath));
