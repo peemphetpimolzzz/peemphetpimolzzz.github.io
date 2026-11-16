@@ -93,6 +93,7 @@ async function main() {
   const requiredAssets = [
     ".nojekyll",
     "assets/avatar.png",
+    "assets/og-card.png",
     "assets/favicon.svg",
     "assets/CV_Peem_Phetpimol.pdf",
     "assets/fonts/Inter-Regular.ttf",
