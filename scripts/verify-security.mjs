@@ -85,7 +85,7 @@ async function main() {
 
   /* 7. Privacy & corporate confidentiality leakage guard */
   const combinedPublic = `${html}\n${css}\n${js}`;
-  for (const secret of ["091-845", "Bang Bo", "DO260", "LARO", "PSEApp", "PeemKraft", "peemkraft"]) {
+  for (const secret of ["091-845", "Bang Bo", "DO260", "LARO", "PSEApp", "PeemKraft", "peemkraft", "Triple T", "3BB", "NocNoc", "BetterBe", "Phuket"]) {
     assert(!combinedPublic.toLowerCase().includes(secret.toLowerCase()), `Restricted string leaked in public bundle: ${secret}`);
   }
 
