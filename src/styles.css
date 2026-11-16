@@ -630,7 +630,12 @@ html[data-theme="dark"] .icon-moon {
   text-wrap: pretty;
 }
 
-html[lang="th"] .section-note {
+.experience-intro .section-note,
+.contact-copy .section-note {
+  margin-top: 0.85rem;
+}
+
+html[lang="th"] .section-header .section-note {
   max-width: 58ch;
   text-wrap: balance;
 }
@@ -642,7 +647,7 @@ html[lang="th"] .section-note {
     justify-content: space-between;
   }
 
-  .section-note {
+  .section-header .section-note {
     text-align: right;
   }
 }
