@@ -185,8 +185,8 @@
             </div>
             <p class="tile-desc" data-i18n="cap.t2.desc">Embedding identity federation and static/software composition controls early in every sprint.</p>
             <ul class="spec-list">
-              <li><span data-i18n="cap.t2.k1">Identity</span><span>Microsoft Entra ID (OIDC / MSAL), JWT</span></li>
-              <li><span data-i18n="cap.t2.k2">Access Control</span><span data-i18n="cap.t2.v2">Server-side RBAC, rate limiting, idempotency</span></li>
+              <li><span data-i18n="cap.t2.k1">Identity</span><span>Microsoft Entra ID (SSO / OIDC), JWT</span></li>
+              <li><span data-i18n="cap.t2.k2">Access Control</span><span data-i18n="cap.t2.v2">Server-side RBAC, request validation, rate limiting</span></li>
               <li><span data-i18n="cap.t2.k3">Code &amp; SCA</span><span data-i18n="cap.t2.v3">SonarQube, Coverity, Black Duck remediation</span></li>
             </ul>
           </article>
@@ -208,7 +208,7 @@
               <li>Flutter / React Native</li>
               <li>PostgreSQL / SQL Server</li>
               <li>Oracle / MongoDB / Redis</li>
-              <li>SignalR · SAP OData</li>
+              <li>SignalR · REST APIs</li>
             </ul>
           </article>
 
@@ -268,12 +268,12 @@
                 <span class="case-domain" data-i18n="cases.1.domain">Security &amp; Compliance Portal</span>
                 <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
-              <h3 data-i18n="cases.1.title">Enterprise Security Operations &amp; Access Governance Portal</h3>
-              <p class="case-summary" data-i18n="cases.1.summary">Led functional specification, domain modeling, and full-stack delivery for an enterprise governance portal uniting centralized directory controls, real-time notifications, and audit-ready approval trails.</p>
+              <h3 data-i18n="cases.1.title">Enterprise Portal Security &amp; Access Control</h3>
+              <p class="case-summary" data-i18n="cases.1.summary">Led functional specification, data modeling, and full-stack delivery for internal enterprise portals uniting centralized user permissions, notifications, and audit-ready approval trails.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt data-i18n="cases.1.k1">Identity &amp; Guards</dt>
-                  <dd data-i18n="cases.1.v1">Enforced Microsoft Entra ID OIDC / MSAL authentication, strict server-side RBAC, request rate limiting, and idempotent mutation guards.</dd>
+                  <dt data-i18n="cases.1.k1">Identity &amp; Access Control</dt>
+                  <dd data-i18n="cases.1.v1">Implemented Microsoft Entra ID SSO, server-side RBAC, and API rate limiting to protect internal service workflows.</dd>
                 </div>
                 <div>
                   <dt data-i18n="cases.1.k2">Security Verification</dt>
@@ -291,7 +291,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-1">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-1" hidden>
-                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.1.detail">Separated query and command services at the application layer with parameterized EF Core migrations, transactional outbox consistency, and Microsoft Graph background synchronization.</span></p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.1.detail">Structured clean API and service layers with parameterized EF Core migrations, email notifications, and Microsoft Graph integration.</span></p>
               </div>
             </div>
           </article>
@@ -303,24 +303,24 @@
                 <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
               <h3 data-i18n="cases.2.title">Unified Service Request &amp; Operational Workflow Suite</h3>
-              <p class="case-summary" data-i18n="cases.2.summary">Architected interconnected internal portals for tracking cross-department requests, SAP OData master data synchronization, and automated PDF/Excel compliance exports.</p>
+              <p class="case-summary" data-i18n="cases.2.summary">Built interconnected internal service portals for tracking department requests, automating approval workflows, and exporting PDF/Excel compliance reports.</p>
               <dl class="case-outcomes">
                 <div>
                   <dt data-i18n="cases.2.k1">Integration Layer</dt>
-                  <dd data-i18n="cases.2.v1">Designed resilient REST contracts bridging core ERP SAP OData feeds with low-latency Redis caching and SQL Server reporting views.</dd>
+                  <dd data-i18n="cases.2.v1">Designed REST APIs with Redis caching, SQL Server reporting views, and Microsoft Graph directory integration.</dd>
                 </div>
               </dl>
               <div class="case-footer">
                 <ul class="stack-pills">
                   <li>.NET</li>
-                  <li>SAP OData</li>
+                  <li>REST APIs</li>
                   <li>SQL Server</li>
                   <li>Redis</li>
                 </ul>
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-2">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-2" hidden>
-                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.2.detail">Standardized API error envelopes, pagination limits, and automated UAT test scripts so business owners could validate multi-stage routing rules independently.</span></p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.2.detail">Standardized API error responses, pagination, and UAT test scenarios so stakeholders could verify multi-stage approval rules reliably.</span></p>
               </div>
             </div>
           </article>
@@ -360,12 +360,12 @@
                 <span class="case-domain" data-i18n="cases.4.domain">Platform Tooling &amp; Migration</span>
                 <span class="case-year" data-i18n="period.2024Present">2024 - Present</span>
               </div>
-              <h3 data-i18n="cases.4.title">Configuration Governance Utility &amp; Legacy Data Seeder</h3>
-              <p class="case-summary" data-i18n="cases.4.summary">Built developer environment validation tools and Python-driven ETL/seeders to migrate legacy relational datasets cleanly into modernized PostgreSQL schemas.</p>
+              <h3 data-i18n="cases.4.title">Environment Configuration &amp; Legacy Database Migration Tooling</h3>
+              <p class="case-summary" data-i18n="cases.4.summary">Built environment configuration checks and Python/EF Core database seeders to migrate legacy tables cleanly into PostgreSQL.</p>
               <dl class="case-outcomes">
                 <div>
-                  <dt data-i18n="cases.4.k1">Cutover Reliability</dt>
-                  <dd data-i18n="cases.4.v1">Eliminated manual schema mismatches during UAT cutovers using repeatable dry-run validation and checksum verification.</dd>
+                  <dt data-i18n="cases.4.k1">Migration Reliability</dt>
+                  <dd data-i18n="cases.4.v1">Reduced manual errors during UAT and production cutovers through automated schema checks and test-run verification.</dd>
                 </div>
               </dl>
               <div class="case-footer">
@@ -378,7 +378,7 @@
                 <button type="button" class="detail-toggle" aria-expanded="false" aria-controls="case-detail-4">Architecture Notes</button>
               </div>
               <div class="case-detail" id="case-detail-4" hidden>
-                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.4.detail">Idempotent batch ingestion with explicit foreign-key dependency ordering and dry-run diff summaries before database write commits.</span></p>
+                <p><strong data-i18n="cases.designLabel">Design Decisions:</strong> <span data-i18n="cases.4.detail">Ordered parent-child foreign-key dependencies and logged record counts before committing production database writes.</span></p>
               </div>
             </div>
           </article>
@@ -469,19 +469,6 @@
             </div>
             <ul class="timeline-bullets">
               <li data-i18n="exp.5.b1">Developed a web application for Prince of Songkla University using the Laravel framework.</li>
-            </ul>
-          </li>
-
-          <li class="timeline-item">
-            <div class="timeline-header">
-              <div>
-                <h3>Research Assistant</h3>
-                <p class="timeline-company" data-i18n="exp.6.company">Prince of Songkla University · Songkhla, Thailand</p>
-              </div>
-              <span class="timeline-period" data-i18n="exp.6.period">Jan 2021 - Mar 2021</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li data-i18n="exp.6.b1">Supported chemical separation research and created 3D models.</li>
             </ul>
           </li>
 
