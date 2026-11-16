@@ -144,7 +144,7 @@ const TRANSLATIONS: Record<Locale, Record<string, string>> = {
     "footer.meta": "Strict CSP · Zero Third-Party CDNs · Self-Hosted OFL Fonts"
   },
   th: {
-    "meta.title": "ภีม เพชรพิมล | Systems Analyst & Full-Stack Software Engineer",
+    "meta.title": "ภีม เพ็ชรพิมล | Systems Analyst & Full-Stack Software Engineer",
     "a11y.skip": "ข้ามไปยังเนื้อหาหลัก",
     "nav.architecture": "สถาปัตยกรรม",
     "nav.cases": "กรณีศึกษา",
@@ -159,7 +159,7 @@ const TRANSLATIONS: Record<Locale, Record<string, string>> = {
     "hero.lead": "ส่งมอบแพลตฟอร์ม .NET, Angular และ Multi-Cloud ตั้งแต่การวิเคราะห์ระบบจนถึง Production ที่ผ่านเกณฑ์ SAST/SCA",
     "hero.ctaCases": "ดูกรณีศึกษา",
     "hero.ctaCv": "ดาวน์โหลด CV",
-    "profile.name": "ภีม เพชรพิมล (Peem Phetpimol)",
+    "profile.name": "ภีม เพ็ชรพิมล (Peem Phetpimol)",
     "profile.location": "กรุงเทพฯ / สมุทรปราการ, ประเทศไทย",
     "profile.tenure": "ประสบการณ์พัฒนาระบบองค์กร 5+ ปี",
     "profile.stackLabel": "เทคโนโลยีหลัก",
